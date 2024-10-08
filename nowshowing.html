@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Citymax Cinema Belfast">
+	    <title>Citymax Cinema Now Showing</title>
+
+		<!-- bootstrap style ref -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+			crossorigin="anonymous">
+
+		<!-- css stylesheets -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	    <link href="css/nowshowing.css" rel="stylesheet">
+	</head>
+	<body>
+
+		<!-- javascript -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="javascript/nowshowing.js"></script>
+	
+		<!-- accessibility return mark -->
+		<div id="back_to_top">
+		</div>
+
+		<!-- accessiblilty skip -->
+		<div id="skip">
+		    <a href="#main"><img src="https://www.csuci.edu/images/spacer.gif" border="1" alt="Skip Global Navigation"></a>
+		</div>
+
+		<!--  navigation bar -->
+		<nav class="nav">
+			<div class="logo">
+    			<a href="index.html"><img src="images/default_images/citymax.png" alt="Citymax Logo Home Button"></a>
+			</div>
+    		<div>
+    			<img class="contrast-b" id="eye" onclick="toggleContrast()" tabindex="0" 
+    			onkeypress="toggleContrast(event)" src="images/default_images/eye.png" alt="Contrast logo" width="20px" 
+    			alt="Contrast mode">
+    		</div>
+            <div class="nav-bar">
+            	<a href="index.html">Home</a>
+            	<a href="nowshowing.html">Now Showing</a>
+            	<a href="comingsoon.html">Coming Soon</a>
+            	<a href="tickets.html">Tickets</a>
+            	<a href="competition.html">Competition</a>
+            	<a href="contact.html">Register</a>
+        	</div>
+
+        	<!-- reponsive navigation bar dropdown menu -->
+			<div class="dropdown-center" id="menu">
+			    <img class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" src="images/default_images/menu.png"  alt="Dropdown Menu" height="40px" width="60px">
+			  <div class="dropdown-menu">
+			  	<a class="dropdown-item" href="index.html">Home</a>
+			  	<a class="dropdown-item" href="nowshowing.html">Now Showing</a>
+			    <a class="dropdown-item" href="comingsoon.html">Coming Soon</a>
+			    <a class="dropdown-item" href="tickets.html">Tickets</a>
+			    <a class="dropdown-item" href="competition.html">Competition</a>
+			    <a class="dropdown-item" href="contact.html">Register</a>
+			  </div>
+			</div>
+		</nav>
+   
+
+		<div class="now-showing">
+			<img src="images/default_images/citymax.webp" alt="Citymax logo">
+			<h1>NOW SHOWING</h1>
+
+			<!-- navbar accessibilty skip to main content locator-->
+			<div id="main">
+			</div>
+		</div>
+		
+		<!-- screen 1 settings -->
+		<div class="section-1">
+			<div class="screen-1">
+				<img src="images/whatson_images/dune2_logo.webp" alt="Dune Part Two logo">			    
+			</div>
+			<div class="screen-1-iframe" style="display: none;">
+				<iframe  alt="Dune Part Two trailer" src="https://www.youtube.com/embed/U2Qp5pL3ovA" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="about-1" style="display: none;">
+				<p><b>Dune: Part Two</b>  (Screen 1) Rating: PG<br>Director: Denis Villeneuve<br>Cast: Timothée Chalamet, Zendaya, Rebecca
+					Ferguson<br><br><b>Storyline</b><br>Paul Atreides unites with Chani and the Fremen while on a warpath of revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the known universe, he endeavors to prevent a terrible future only he can foresee.</p>
+				<div class="mobile-button-1">
+					<button style="display:none;" id="trailer-1">Watch Trailer</button>
+					<a alt="Go to booking page" id="book-now-mobile" href="tickets.html">Book now</a>
+				</div>
+			</div>
+			<div class="info-1">
+				<p>Dune: Part Two</p>
+				<img src="images/whatson_images/pg.webp" alt="Parental guidiance rating">	
+				<button class="more-info-1">More info</button>	
+			</div>
+			<img id="s1" src="images/whatson_images/screen1.webp" width="780px" alt="Screen 1">	
+		</div>
+
+		<!--  screen 2 settings -->
+		<div class="section-2">
+			<div class="screen-2">
+				<img src="images/whatson_images/ghostbusters_logo.webp" alt="Ghostbusters Frozen Empire logo">
+			</div>
+			<div class="screen-2-iframe" style="display: none;">
+				<iframe alt="Ghostbusters Frozen Empire trailer" src="https://www.youtube.com/embed/HpOBXh02rVc" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="about-2" style="display: none;">
+				<p><b>Ghostbusters Frozen Empire</b>  (Screen 2) Rating: PG<br>Director: Gil Kenan<br>Cast: Paul Rudd, Carrie Coon, Finn Wolfhard
+					<br><br><b>Storyline</b><br>The Spengler family returns to where it all started to team up with the original Ghostbusters. But when the discovery of an ancient artifact unleashes an evil force, Ghostbusters new and old must join forces to protect their home and save the world from a second Ice Age.</p>
+				<div class="mobile-button-2">
+					<button style="display:none;" id="trailer-2">Watch Trailer</button>
+					<a alt="Go to booking page" id="book-now-mobile" href="tickets.html">Book now</a>
+				</div>
+			</div>
+			<div class="info-2">
+				<p>Ghostbusters Frozen Empire</p>
+				<img src="images/whatson_images/pg.webp" alt="Parental guidiance rating">	
+				<button class="more-info-2">More info</button>
+			</div>
+			<img id="s2" src="images/whatson_images/screen2.webp" width="780px" alt="Screen 2">		
+		</div>
+
+		<!-- screen 3 settings -->
+		<div class="section-3">
+			<div class="screen-3">
+				<img src="images/whatson_images/kung_logo.webp" alt="Kung Fu Panda 4 logo">
+			</div>
+			<div class="screen-3-iframe" style="display: none;">
+				<iframe alt="Kung Fu Panda 4 trailer" src="https://www.youtube.com/embed/HpOBXh02rVc" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="about-3" style="display: none;">
+				<p><b>Kung Fu Panda 4</b>  (Screen 3) Rating: U<br>Directors: Mike Mitchell, Stephanie Stine<br>Cast: Jack Black, Awkwafina,
+				 	DustinHoffman<br><br><b>Storyline</b><br>After Po is tapped to become the Spiritual Leader of the Valley of Peace, he needs to find and train a new Dragon Warrior, while a wicked sorceress plans to re-summon all the master villains whom Po has vanquished to the spirit realm.</p>
+			 	<div class="mobile-button-3">
+					<button style="display:none;" id="trailer-3">Watch Trailer</button>
+					<a alt="Go to booking page" id="book-now-mobile" href="tickets.html">Book now</a>
+				</div>
+			</div>
+			<div class="info-3">
+				<p>Kung Fu Panda 4</p>
+				<img src="images/whatson_images/u.png" alt="Universal rating, suitable for all">	
+				<button class="more-info-3">More info</button>			
+			</div>
+			<img id="s3" src="images/whatson_images/screen3.webp" width="780px" alt="Screen 3">
+		</div>
+
+		<!-- screen 4 settings -->
+		<div class="section-4">
+			<div class="screen-4">
+				<img src="images/whatson_images/fall_logo.webp" alt="The Fall Guy logo">
+			</div>
+			<div class="screen-4-iframe" style="display: none;">
+				<iframe alt="The Fall Guy trailer" src="https://www.youtube.com/embed/HpOBXh02rVc" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="about-4" style="display: none;">
+				<p><b>The Fall Guy</b>  (Screen 4) Rating: PG<br>Director: David Leitch<br>Cast: Ryan Gosling, Emily Blunt, Aaron Taylor-Johnson
+					<br><br><b>Storyline</b><br>After leaving the business one year earlier, battle-scarred stuntman Colt Seavers springs back into action when the star of a big studio movie suddenly disappears. Colt soon finds himself ensnared in a sinister plot that pushes him to the edge of a fall more dangerous than any stunt.</p>
+				<div class="mobile-button-4">
+					<button style="display:none;" id="trailer-4">Watch Trailer</button>
+					<a alt="Go to booking page" id="book-now-mobile" href="tickets.html">Book now</a>
+				</div>			
+			</div>
+			<div class="info-4">
+				<p>The Fall Guy</p>
+				<img src="images/whatson_images/pg.webp" alt="Parental guidiance rating">	
+				<button class="more-info-4">More info</button>			
+			</div>
+			<img id="s4" src="images/whatson_images/screen4.webp" width="780px" alt="Screen 4">	
+		</div>
+
+		<!-- screen 5 settings -->
+		<div class="section-5">
+			<div class="screen-5">
+				<img src="images/whatson_images/civil_logo.webp" alt="Civil War logo">
+			</div>
+			<div class="screen-5-iframe" style="display: none;">
+				<iframe alt="Civil War trailer" src="https://www.youtube.com/embed/HpOBXh02rVc" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="about-5" style="display: none;">
+				<p><b>Civil War</b>  (Screen 5) Rating: 15<br>Director: Alex Garland<br>Cast: Nick Offerman, Kirsten Dunst, Wagner Moura<br><br>
+					<b>Storyline</b><br>Civil War is a 2024 dystopian war film written and directed by Alex Garland. It follows a team of journalists traveling across the United States during a civil war fought between an authoritarian federal government and several regional factions.</p>
+				<div class="mobile-button-5">
+					<button style="display:none;" id="trailer-5">Watch Trailer</button>
+					<a alt="Go to booking page" id="book-now-mobile" href="tickets.html">Book now</a>
+				</div>	
+			</div>
+			<div class="info-5">
+			    <p>Civil War</p>
+			    <img src="images/whatson_images/15.png" alt="Rated 15">
+			    <button class="more-info-5">More info</button>		    
+			</div>
+			<img id="s5" src="images/whatson_images/screen5.webp" alt="Screen 5" width="780px">
+		</div>
+
+		<!-- footer section -->
+		<footer>
+
+			<!-- return to top of page dot for tab control/screenreader with href back_to_top to relocate-->
+			<div id="return">
+		    	<a href="#back_to_top"><img src="https://www.csuci.edu/images/spacer.gif" border="1" alt="Return to top of page"></a> 
+			</div>
+
+			<!-- footer social media section -->
+			<div class="social">
+			    <div>
+			        <h4>Social Media</h4>
+			        <ol>
+			            <li>
+			                <a href="https://www.facebook.com/citymaxbelfast" target="_blank">
+			                    <img src="images/default_images/facebook.png" width = "30px" alt="Facebook">
+			                </a>
+			            </li>
+			            <li>
+			                <a href="https://twitter.com/citymaxbelfast" target="_blank">
+			                    <img src="images/default_images/x.png" width="30px" alt="X">
+			                </a>
+			            </li>
+			            <li>
+			                <a href="https://www.instagram.com/citymaxbelfast" target="_blank">
+			                    <img src="images/default_images/insta.png" width="30" alt="Instagram">
+			                </a>
+			            </li>
+			        </ol>
+			    </div>
+			</div>
+
+
+		    <!-- footer contact section -->
+        	<div class="contact-info">
+	        	<div>
+		        	<h4>Contact Information</h4>
+		    	</div>
+		    	<div>
+			        <p>Citymax Cinema<br>23 Movie Street<br>Belfast<br>County Antrim<br>BT37 9AX<br>Email: citymax@gmail.com<br>
+			           Phone: 028 906543333
+			        </p>
+		        </div>	       
+		    </div>
+
+		    <!-- footer opening hours section -->
+	        <div class="opening-hours">
+	        	<div>
+		        	<h4>Opening Hours</h4>
+		    	</div>
+		    	<div>
+			        <p>Mon 11:00 AM - 1:00 AM<br>Tue 11:00 AM - 1:00 AM<br>Wed 11:00 AM - 1:00 AM<br>
+			           Thu 11:00 AM - 1:00 AM<br>Fri 11:00 AM - 1:00 AM<br>Sat 11:00 AM - 1:00 AM<br>Sun 11:00 PM - 1:00 AM
+			        </p>
+		        </div>	       
+		    </div>
+		</footer>			
+	</body>
+</html>

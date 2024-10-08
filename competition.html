@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name="description" content="Citymax Cinema Belfast">
+	    <title>Citymax Cinema Competition</title>
+
+		<!-- bootstrap style ref -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+			crossorigin="anonymous">
+
+		<!-- link to custom css style sheet -->
+	    <link rel="stylesheet" href="css/competition.css">
+
+	</head>
+	<body>
+		<!-- javascript links -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+		<script src="javascript/competition.js"></script>
+
+						
+		<!-- accessibility return mark -->
+		<div id="back_to_top">
+		</div>
+
+		<!-- accessiblilty skip -->
+		<div id="skip">
+		    <a href="#main"><img src="https://www.csuci.edu/images/spacer.gif" border="1" alt="Skip Global Navigation"></a>
+		</div>
+
+		<!--  navigation bar -->
+		<nav class="nav">
+			<div class="logo">
+    			<a href="index.html"><img src="images/default_images/citymax.png" alt="Citymax Logo Home Button"></a>
+			</div>
+    		<div>
+    			<img class="contrast-b" id="eye" onclick="toggleContrast()" tabindex="0" 
+    			onkeypress="toggleContrast(event)" src="images/default_images/eye.png" alt="Contrast logo" width="20px" 
+    			alt="Contrast mode">
+    		</div>
+            <div class="nav-bar">
+            	<a href="index.html">Home</a>
+            	<a href="nowshowing.html">Now Showing</a>
+            	<a href="comingsoon.html">Coming Soon</a>
+            	<a href="tickets.html">Tickets</a>
+            	<a href="competition.html">Competition</a>
+            	<a href="contact.html">Register</a>
+        	</div>
+
+        	<!-- reponsive navigation bar dropdown menu -->
+			<div class="dropdown-center" id="menu">
+			    <img class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" src="images/default_images/menu.png"  alt="Dropdown Menu" height="40px" width="60px">
+			  <div class="dropdown-menu">
+			  	<a class="dropdown-item" href="index.html">Home</a>
+			    <a class="dropdown-item" href="nowshowing.html">Now Showing</a>
+			    <a class="dropdown-item" href="comingsoon.html">Coming Soon</a>
+			    <a class="dropdown-item" href="tickets.html">Tickets</a>
+			    <a class="dropdown-item" href="competition.html">Competition</a>
+			    <a class="dropdown-item" href="contact.html">Register</a>
+			  </div>
+			</div>
+		</nav>
+	   
+	   <!-- main competition page layout -->
+		<div class="competition">
+			<h1>Win an Unlimted VIP cinema ticket.</h1>
+			<div class="info">
+				<div>
+					<img id="vip" src="images/competition_images/vip.webp" alt="Vip Ticket Image">
+				</div>
+
+				<!-- navbar skip to main content locator-->
+				<div id="main">
+				</div>			
+				<div>
+					<p>Step into a world of endless entertainment with our competition offering 10 lucky winners Unlimited VIP cinema tickets!<br><br> Dive into a cinematic adventure like never before and seize the chance to experience the magic of the big screen.<br><br>Just answer 5 movie-related questions correctly to be entered into our random draw for Northern Ireland's greatest prize for movie lovers.</p>
+				</div>
+				<div>
+					<button id="take-quiz">Enter Now</button>
+				</div>
+			</div>
+
+
+			<!-- radio button quiz layout -->
+			<div class="quiz" style="display: none;">
+				<div class="question-list">
+					<div class="question" id="question1" style="display: none;">
+				        <h2>Question 1</h2>
+				        <p>Who played Bane in Christopher Nolan's The Dark Knight Rises?<br></p>
+				        <div>
+				        	<input type="radio" name="q1" value="a">Christian Bale
+				    	</div>
+				    	<div>
+				        	<input type="radio" name="q1" value="b">Tom Hardy
+				    	</div>
+				    	<div>
+				        	<input type="radio" name="q1" value="c">Cillian Murphy
+				    	</div>
+				    	<div>
+				        	<input type="radio" name="q1" value="d">Bruce Willis<br><br>
+				    	</div>
+				        <button id="next" onclick="nextQuestion()">Next</button>
+				    </div>
+				    <div class="movie-image" id="movie1" style="display: none;">
+			    	</div>
+				    <div class="question" id="question2" style="display: none;">
+					    <h2>Question 2</h2>
+					    <p>How many oscars did James Cameron's 1997 film Titanic win?</p>
+					    <div>
+					    	<input type="radio" name="q2" value="a">0
+						</div>
+						<div>
+					    	<input type="radio" name="q2" value="b">8
+						</div>
+						<div>
+					    	<input type="radio" name="q2" value="c">16
+						</div>
+						<div>
+					    	<input type="radio" name="q2" value="d">11<br><br>
+				    	</div>
+					    <button id="next" onclick="nextQuestion()">Next</button>
+					</div>
+					<div class="movie-image" id="movie2" style="display: none;">
+			    	</div>
+					<div class="question" id="question3" style="display: none;">
+					    <h2>Question 3</h2>
+					    <p>Who directed the classic 1994 film Pulp Fiction?</p>
+					    <div>
+					    	<input type="radio" name="q3" value="a">Stephen Spielberg
+						</div>
+						<div>
+					    	<input type="radio" name="q3" value="b">Quentin Tarantino
+						</div>
+						<div>
+					    	<input type="radio" name="q3" value="c">George Lucas
+						</div>
+						<div>
+					    	<input type="radio" name="q3" value="d">Stanley Kubrick<br><br>
+						</div>
+					    <button id="next" onclick="nextQuestion()">Next</button>
+					</div>
+					<div class="movie-image" id="movie3" style="display: none;">
+			    	</div>
+					<div class="question" id="question4" style="display: none;">
+					    <h2>Question 4</h2>
+					    <p>Who played the lead role of Maximus in the movie Gladiator?</p>
+					    <div>
+					    	<input type="radio" name="q4" value="a">Tom Cruise
+						</div>
+						<div>
+					    	<input type="radio" name="q4" value="b">Ryan Gosling
+						</div>
+						<div>
+					    	<input type="radio" name="q4" value="c">Harrison Ford
+						</div>
+						<div>
+					    	<input type="radio" name="q4" value="d">Russell Crowe<br><br>
+						</div>
+					    <button id="next" onclick="nextQuestion()">Next</button>
+					</div>
+					<div class="movie-image" id="movie4" style="display: none;">
+			    	</div>
+					<div class="question" id="question5" style="display: none;">
+					    <h2>Question 5</h2>
+					    <p>Name Leonardo DiCaprio's character from the movie Wolf of Wall Street?</p>
+					    <div>
+					    	<input type="radio" name="q5" value="a">Michael Corleone
+						</div>
+						<div>
+					    	<input type="radio" name="q5" value="b">Andy Dufresne
+						</div>
+						<div>
+					    	<input type="radio" name="q5" value="c">Jordan Belfort
+						</div>
+						<div>
+					    	<input type="radio" name="q5" value="d">Vincent Vega<br><br>
+						</div>
+					    <button id="next" onclick="nextQuestion()">Next</button>
+					</div>
+				</div>
+
+
+		    	<!-- draggable/droppable security match -->
+			    <div class="thanos-match" style="display: none">
+			    		<h3><b>PROVE YOU ARE A HUMAN:</b><br><br> Place the Infinity Stones in correct place to proceed to score.</h3>
+			    	<div class="droppable">
+			        	<img id="thanos" alt="decoration" alt="Thanos image security check" src="images/competition_images/thanos_empty.webp">
+			        	<img id="thanos-mouth" src="images/competition_images/thanos_mouth.webp">
+			        	<div class="droppable-area1" id="orange-area"></div>
+			        	<div class="droppable-area2" id="yellow-area"></div>
+				        <div class="droppable-area3" id="red-area"></div>
+				    	<div class="droppable-area4" id="blue-area"></div>
+				    	<div class="droppable-area5" id="green-area"></div>
+				    	<div class="droppable-area6" id="purple-area"></div>
+			    	</div>
+			    	<div class="draggable">
+					    <img class="draggable-image" alt="Yellow stone"id="orange-stone" src="images/competition_images/orange_stone.webp">
+					    <img class="draggable-image" alt="Green stone" id="green-stone" src="images/competition_images/green_stone.webp">
+					    <img class="draggable-image" alt ="Purple stone" id ="purple-stone" src="images/competition_images/purple_stone.webp">
+					    <img class="draggable-image" alt="Yellow stone" id="yellow-stone" src="images/competition_images/yellow_stone.webp">
+					    <img class="draggable-image" alt="Red stone" id="red-stone" src="images/competition_images/red_stone.webp">
+					    <img class="draggable-image" alt="Blue stone" id="blue-stone" src="images/competition_images/blue_stone.webp">
+					</div>
+					
+						<!-- security match audio mp3 -->
+						<audio id="audioPlayer1" src="audio/inevitable.mp3"></audio>
+						<audio id="audioPlayer2" src="audio/right.mp3"></audio>
+						<audio id="audioPlayer3" src="audio/wrong.mp3"></audio>
+				</div>
+			</div>
+		    <div class="try-again" style="display: none;">		
+				<div>
+					<p></p>
+				</div>
+				<div>
+					<button id="continue">Continue</button>
+				</div>
+			</div>
+
+
+			<!-- win/enter details -->
+			<div class="win" style="display: none">
+				<p>You scored 5 out of 5.<br><br>Please enter your name and email address to be entered in our draw to
+					win an Unlimited VIP cinema ticket.</p>
+				<div class="contact-form">
+		    		<form id="quiz-form">
+		    			<ul>
+		    			 	<li>
+					        	<input type="text" id="firstName" placeholder="First Name" autocomplete="off">
+					        </li>
+					        <li>
+					        	<input type="text" id="surname" placeholder="Surname" autocomplete="off">
+				        	</li>
+				        	<li>
+						        <input type="text" id="email" placeholder="Enter email address" autocomplete="off"> 
+					        </li>
+					        <li>
+				        		<input type="text" id="emailConfirm" placeholder="Confirm email address" autocomplete="off">
+				        	</li>
+			        	</ul>
+			        	<button class="submit-entry" type="submit" >Submit</button> 
+		        	</form>
+	        	</div>
+	        	<p id="p2">Winners will be notified on the 18th May 2024.<br>Good Luck!<p>
+        	</div>
+	    </div>
+
+
+    	<!-- footer section -->
+		<footer>
+
+			<!-- return to top of page dot for tab control/screenreader with href back_to_top to relocate-->
+			<div id="return">
+		    	<a href="#back_to_top"><img src="https://www.csuci.edu/images/spacer.gif" border="1" alt="Return to top of page"></a> 
+			</div>
+
+			<!-- footer social media section -->
+			<div class="social">
+			    <div>
+			        <h3>Social Media</h3>
+			        <ol>
+			            <li>
+			                <a href="https://www.facebook.com/citymaxbelfast" target="_blank">
+			                    <img src="images/default_images/facebook.png" width = "30px" alt="Facebook">
+			                </a>
+			            </li>
+			            <li>
+			                <a href="https://twitter.com/citymaxbelfast" target="_blank">
+			                    <img src="images/default_images/x.png" width="30px" alt="X">
+			                </a>
+			            </li>
+			            <li>
+			                <a href="https://www.instagram.com/citymaxbelfast" target="_blank">
+			                    <img src="images/default_images/insta.png" width="30" alt="Instagram">
+			                </a>
+			            </li>
+			        </ol>
+			    </div>
+			</div>
+
+		    <!-- footer contact section -->
+			</div>
+        	<div class="contact-info">
+	        	<div>
+		        	<h3>Contact Information</h3>
+		    	</div>
+		    	<div>
+			        <p>Citymax Cinema<br>23 Movie Street<br>Belfast<br>County Antrim<br>BT37 9AX<br>Email: citymax@gmail.com<br>
+			           Phone: 028 906543333
+			        </p>
+		        </div>	       
+		    </div>
+
+		    <!-- footer opening hours section -->
+	        <div class="opening-hours">
+	        	<div>
+		        	<h3>Opening Hours</h3>
+		    	</div>
+		    	<div>
+			        <p>Mon 11:00 AM - 1:00 AM<br>Tue 11:00 AM - 1:00 AM<br>Wed 11:00 AM - 1:00 AM<br>
+			           Thu 11:00 AM - 1:00 AM<br>Fri 11:00 AM - 1:00 AM<br>Sat 11:00 AM - 1:00 AM<br>Sun 11:00 PM - 1:00 AM
+			        </p>
+		        </div>	       
+		    </div>
+		</footer>  			
+	</body>
+</html>

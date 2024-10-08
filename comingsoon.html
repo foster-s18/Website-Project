@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="description" content="Citymax Cinema Belfast">
+	    <title>Citymax Coming Soon</title>
+
+		<!-- bootstrap style ref -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+			crossorigin="anonymous">
+
+		<!-- link to custom css style sheet -->
+	    <link href="css/comingsoon.css" rel="stylesheet">
+
+	</head>
+	<body>
+
+		<!-- javascript  -->
+		<script src="jquery/jquery-3.7.1.min.js"></script>
+		<script src="javascript/comingsoon.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+					
+		<!-- accessibility return mark -->
+		<div id="back_to_top">
+		</div>
+
+		<!-- accessiblilty skip -->
+		<div id="skip">
+		    <a href="#main"><img src="https://www.csuci.edu/images/spacer.gif" border="1" alt="Skip Global Navigation"></a>
+		</div>
+
+		<!--  navigation bar -->
+		<nav class="nav">
+			<div class="logo">
+    			<a href="index.html"><img src="images/default_images/citymax.png" alt="Citymax Logo Home Button"></a>
+			</div>
+    		<div>
+    			<img class="contrast-b" id="eye" onclick="toggleContrast()" tabindex="0" 
+    			onkeypress="toggleContrast(event)" src="images/default_images/eye.png" alt="Contrast logo" width="20px" 
+    			alt="Contrast mode">
+    		</div>
+            <div class="nav-bar">
+            	<a href="index.html">Home</a>
+            	<a href="nowshowing.html">Now Showing</a>
+            	<a href="comingsoon.html">Coming Soon</a>
+            	<a href="tickets.html">Tickets</a>
+            	<a href="competition.html">Competition</a>
+            	<a href="contact.html">Register</a>
+        	</div>
+
+        	<!-- reponsive navigation bar dropdown menu -->
+			<div class="dropdown-center" id="menu">
+			    <img class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" src="images/default_images/menu.png"  alt="Dropdown Menu" height="40px" width="60px">
+			  <div class="dropdown-menu">
+			  	<a class="dropdown-item" href="index.html">Home</a>
+			    <a class="dropdown-item" href="nowshowing.html">Now Showing</a>
+			    <a class="dropdown-item" href="comingsoon.html">Coming Soon</a>
+			    <a class="dropdown-item" href="tickets.html">Tickets</a>
+			    <a class="dropdown-item" href="competition.html">Competition</a>
+			    <a class="dropdown-item" href="contact.html">Register</a>
+			  </div>
+			</div>
+		</nav>
+	   
+
+	   <!-- main page layout -->
+		<div class="coming-soon">
+			<img id="heading" src="images/default_images/citymax.png" alt="Citymax Logo" width=300px>
+			<h1>COMING SOON</h1>
+			<!-- navbar skip to main content locator-->
+				<div id="main">
+				</div>
+		</div>
+		<div class="movies" style="display: block;">
+			<div class="film1">
+				<div>
+			    	<img id="deadpool-logo" src="images/comingsoon_images/deadpool_logo.webp" alt="Deapool clickable logo" width="600px">
+		    	</div>
+			</div>
+			<div class="film2">
+				<div>
+			    	<img id="beetle-logo" src="images/comingsoon_images/beetle_logo.webp" alt="Beetlejuice clickable logo" width="600px">
+		    	</div>
+			</div>
+			<div class="film3">
+				<div>
+			    	<img id="apes-logo" src="images/comingsoon_images/apes_logo.webp" alt="Kingdom of planet of the apes clickable logo" width="600px">
+			    </div>
+			</div>
+			<div class="film4">
+				<div>
+				    <img id="joker-logo" src="images/comingsoon_images/joker_logo.webp" alt="Joker 2 logo" width="600px">
+			    </div>
+			</div>
+		</div>
+
+		<!-- template for expamded info -->
+		<div class="film-expand" style="display: none;">
+			<div>
+		    	<img id="film-img" src="" alt="" width="600px">
+		    	<p></p>
+				<button id="go-back">Go back</button>
+	    	</div>
+			<div class="video"><iframe title="Embedded YouTube Video" src=""style="display: block;"
+				frameborder="0" allowfullscreen></iframe>
+				<h2></h2>
+				<img id="rating" src="" alt="">
+				<a class="sign-up" href="contact.html" alt="Sign up Link"><h3>Sign up today to receive exclusive access to early booking alerts!</h3></a>
+			</div>
+		</div>
+
+
+    	<!-- footer section -->
+		<footer>
+
+			<!-- return to top of page dot for tab control/screenreader with href back_to_top to relocate-->
+			<div id="return">
+		    	<a href="#back_to_top"><img src="https://www.csuci.edu/images/spacer.gif" border="1" alt="Return to top of page"></a> 
+			</div>
+
+			<!-- footer social media section -->
+			<div class="social">
+			    <div>
+			        <h4>Social Media</h4>
+			        <ol>
+			            <li>
+			                <a href="https://www.facebook.com/citymaxbelfast" target="_blank">
+			                    <img src="images/default_images/facebook.png" width = "30px" alt="Facebook">
+			                </a>
+			            </li>
+			            <li>
+			                <a href="https://twitter.com/citymaxbelfast" target="_blank">
+			                    <img src="images/default_images/x.png" width="30px" alt="X">
+			                </a>
+			            </li>
+			            <li>
+			                <a href="https://www.instagram.com/citymaxbelfast" target="_blank">
+			                    <img src="images/default_images/insta.png" width="30" alt="Instagram">
+			                </a>
+			            </li>
+			        </ol>
+			    </div>
+			</div>
+
+
+		    <!-- footer contact section -->
+			</div>
+        	<div class="contact-info">
+	        	<div>
+		        	<h4>Contact Information</h4>
+		    	</div>
+		    	<div>
+			        <p>Citymax Cinema<br>23 Movie Street<br>Belfast<br>County Antrim<br>BT37 9AX<br>Email: citymax@gmail.com<br>
+			           Phone: 028 906543333
+			        </p>
+		        </div>	       
+		    </div>
+
+		    <!-- footer opening hours section -->
+	        <div class="opening-hours">
+	        	<div>
+		        	<h4>Opening Hours</h4>
+		    	</div>
+		    	<div>
+			        <p>Mon 11:00 AM - 1:00 AM<br>Tue 11:00 AM - 1:00 AM<br>Wed 11:00 AM - 1:00 AM<br>
+			           Thu 11:00 AM - 1:00 AM<br>Fri 11:00 AM - 1:00 AM<br>Sat 11:00 AM - 1:00 AM<br>Sun 11:00 PM - 1:00 AM
+			        </p>
+		        </div>	       
+		    </div>
+		</footer>		
+	</body>
+</html>

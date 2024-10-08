@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name="description" content="Citymax Cinema Belfast">
+	    <title>Citymax Cinema Tickets</title>
+
+		<!-- css stylesheets -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+			crossorigin="anonymous">
+	    <link rel="stylesheet" href="css/tickets.css">
+	</head>
+	<body>
+
+		<!-- javascript -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="javascript/tickets.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+	
+		<!-- accessibility return mark -->
+		<div id="back_to_top">
+		</div>
+
+		<!-- accessiblilty skip -->
+		<div id="skip">
+		    <a href="#main"><img src="https://www.csuci.edu/images/spacer.gif" border="1" alt="Skip Global Navigation"></a>
+		</div>
+
+		<!--  navigation bar -->
+		<nav class="nav">
+			<div class="logo">
+    			<a href="index.html"><img src="images/default_images/citymax.png" alt="Citymax Logo Home Button"></a>
+			</div>
+    		<div>
+    			<img class="contrast-b" id="eye" onclick="toggleContrast()" tabindex="0" 
+    			onkeypress="toggleContrast(event)" src="images/default_images/eye.png" alt="Contrast logo" width="20px" 
+    			alt="Contrast mode">
+    		</div>
+            <div class="nav-bar">
+            	<a href="index.html">Home</a>
+            	<a href="nowshowing.html">Now Showing</a>
+            	<a href="comingsoon.html">Coming Soon</a>
+            	<a href="tickets.html">Tickets</a>
+            	<a href="competition.html">Competition</a>
+            	<a href="contact.html">Register</a>
+        	</div>
+
+        	<!-- reponsive navigation bar dropdown menu -->
+			<div class="dropdown-center" id="menu">
+			    <img class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" src="images/default_images/menu.png"  alt="Dropdown Menu" height="40px" width="60px">
+			  <div class="dropdown-menu">
+			  	<a class="dropdown-item" href="index.html">Home</a>
+			    <a class="dropdown-item" href="nowshowing.html">Now Showing</a>
+			    <a class="dropdown-item" href="comingsoon.html">Coming Soon</a>
+			    <a class="dropdown-item" href="tickets.html">Tickets</a>
+			    <a class="dropdown-item" href="competition.html">Competition</a>
+			    <a class="dropdown-item" href="contact.html">Register</a>
+			  </div>
+			</div>
+		</nav>
+
+			<!-- top image and heading  -->
+			<div class="booking-image">
+    			<img id="heading" src="images/default_images/citymax.png" alt="Citymax Logo">
+    			<h1>BOOKING SYSTEM</h1>
+			</div>
+
+			<!-- booking system -->
+			<div class="booking-columns">
+
+				<!-- section 1 -->
+				<div class="booking-section-1" style="display:none">
+					<div class="citymax-booking">
+
+						<!-- navbar accessibilty skip to main content locator-->
+						<div id="main">
+						</div>
+
+						<div class="bill">
+							<div class="bill-1">
+								<p><b>CITYMAX TICKET BOOKING SYSTEM</b></p>
+							</div>
+							<div class="bill-2">
+								<p></p>
+							</div>
+							<div class="bill-3">
+								<p></p>
+							</div>
+							<div class="bill-4">
+								<p></p>
+							</div>
+							<div class="select-seats">
+								<p>Choose movie, date and time to enable seat selection.</p>
+							</div>
+							<div class="bill-5">
+								<p></p>
+							</div>
+							<div class="confirmation" style="display: none">
+								<p>BOOKING SUCCESSFUL<br><br>Tickets have been sent to your email address.<br><br>Thank you for
+								choosing</p>
+								<img src="images/default_images/citymax.png" alt="Citymax logo" width="200px">
+							</div>
+							<div>
+							<button class="checkout"  style="display:none" alt="Continue to checkout">Continue to payment</button>
+							</div>
+
+							<!-- jquery validation plug-in  -->
+							<div class="shopping-window">
+								<form id="checkout-form">
+								    <div>
+								        <input type="text" id="name" name="name" placeholder="Full Name" required>
+								    </div>
+
+								    <div>
+								        <input type="text" id="street" name="street" placeholder="Street Address" required>
+								    </div>
+								    <div>
+								        <input type="text" id="city" name="city" placeholder="City" required>
+								    </div>
+								    <div>
+								        <input type="text" id="postcode" name="postcode" placeholder="Postcode" required>
+								    </div>
+								    <div>
+								        <input type="text" id="email" name="email" placeholder="Email" required>
+								    </div>
+								    <div>
+								        <input type="text" id="card" name="card" placeholder="Credit Card" required>
+							        </div>
+							        <div>
+								        <input type="text" id="expiry" name="expiry" placeholder="Expiry Date ex: 04/26" required>
+							        </div>
+							        <div>
+							        	<input type="text" id="cvv" name="cvv" placeholder="CVV" required>
+							        </div>
+								    <div>
+								        <button class="submit" type="submit">Make Payment</button>
+								        <button class="back-btn">Cancel Payment</button>
+								    </div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- section 2 -->
+				<div class="booking-section-2">
+					<div class="time">
+						<h1></h1>
+					</div>
+					<div class="booking-system">
+
+						<!-- dropdown menu movie selection settings -->
+						<div class="select-movie">
+						    <select id="showing-movie">
+						        <option aria-label="Choose Movie">Choose Movie</option>
+						        <option aria-label="Dune Part Two">Dune: Part Two</option>
+						        <option aria-label="Frozen Empire">Ghostbusters Frozen Empire</option>
+						        <option aria-label="Kung Fu Panda 4">Kung Fu Panda 4</option>
+						        <option aria-label="The Fall Guy">The Fall Guy</option>
+						        <option aria-label="Civil War">Civil War</option>
+						    </select>
+						</div>
+
+						<!-- dropdown menu date dettings -->
+						<div class="select-date">
+						    <select id="showing-date">
+						        <option aria-label="Choose Date">Choose Date</option>
+						    </select>
+						</div>
+
+						<!-- downdown menu time settings -->
+						<div class="select-time">
+						    <select id="showing-time">
+						        <option aria-label="Choose Time">Choose Time</option>
+						        <option aria-label="12:00pm" id="show-1">12:00pm</option>
+						        <option aria-label="15:00pm" id="show-2">15:00pm</option>
+						        <option aria-label="18:00pm" id="show-3">18:00pm</option>
+						        <option aria-label="21:00pm" id="show-4">21:00pm</option>
+						    </select>
+						</div>
+
+
+						<!-- empty cinema screen that updates with javascript on chosen image/alt information -->
+					    <div class="screen">
+					        <img src="" alt="">
+					    </div>
+
+					    <!-- seat legend -->
+					    <div class="seat-legend">
+							<div>
+								<img src="images/whatson_images/seat_middle.png" alt="Seat available icon">
+								<h2>Available</h2>
+							</div>
+							<div>		
+								<img src="images/whatson_images/seat_select.png" alt="Seat selected icon">
+								<h2>Selected</h2>
+							</div>
+							<div>		
+								<img src="images/whatson_images/seat_unavailable.png" alt="Seat unavaiable icon">
+								<h2>Unavailable</h2>
+							</div>
+						</div>
+						
+						<!-- seat selection layout -->
+						<div class="seats">
+						    <div class="row-a">
+							    <div class="seat"><a href="a1"><img src="images/whatson_images/seat_middle.png" alt="Seat a1"></a></div>
+							    <div class="seat"><a href="a2"><img src="images/whatson_images/seat_middle.png" alt="Seat a2"></a></div>
+							    <div class="seat"><a href="a3"><img src="images/whatson_images/seat_middle.png" alt="Seat a3"></a></div>
+							    <div class="seat"><a href="a4"><img src="images/whatson_images/seat_middle.png" alt="Seat a4"></a></div>
+							    <div class="seat"><a href="a5"><img src="images/whatson_images/seat_middle.png" alt="Seat a5"></a></div>
+							    <div class="seat"><a href="a6"><img src="images/whatson_images/seat_middle.png" alt="Seat a6"></a></div>
+							    <div class="seat"><a href="a7"><img src="images/whatson_images/seat_middle.png" alt="Seat a7"></a></div>
+							    <div class="seat"><a href="a8"><img src="images/whatson_images/seat_middle.png" alt="Seat a8"></a></div>
+							    <div class="seat"><a href="a9"><img src="images/whatson_images/seat_middle.png" alt="Seat a9"></a></div>
+							    <div class="seat"><a href="a10"><img src="images/whatson_images/seat_middle.png" alt="Seat a10"></a></div>
+							    <div class="seat"><a href="a11"><img src="images/whatson_images/seat_middle.png" alt="Seat a11"></a></div>
+							    <div class="seat"><a href="a12"><img src="images/whatson_images/seat_middle.png" alt="Seat a12"></a></div>
+							    <div class="seat"><a href="a13"><img src="images/whatson_images/seat_middle.png" alt="Seat a13"></a></div>
+							    <div class="seat"><a href="a14"><img src="images/whatson_images/seat_middle.png" alt="Seat a14"></a></div>
+							    <div class="seat"><a href="a15"><img src="images/whatson_images/seat_middle.png" alt="Seat a15"></a></div>
+							    <div class="seat"><a href="a16"><img src="images/whatson_images/seat_middle.png" alt="Seat a16"></a></div>
+							</div>
+
+							<div class="row-b">
+							    <div class="seat"><a href="b1"><img src="images/whatson_images/seat_middle.png" alt="Seat b1"></a></div>
+							    <div class="seat"><a href="b2"><img src="images/whatson_images/seat_middle.png" alt="Seat b2"></a></div>
+							    <div class="seat"><a href="b3"><img src="images/whatson_images/seat_middle.png" alt="Seat b3"></a></div>
+							    <div class="seat"><a href="b4"><img src="images/whatson_images/seat_middle.png" alt="Seat b4"></a></div>
+							    <div class="seat"><a href="b5"><img src="images/whatson_images/seat_middle.png" alt="Seat b5"></a></div>
+							    <div class="seat"><a href="b6"><img src="images/whatson_images/seat_middle.png" alt="Seat b6"></a></div>
+							    <div class="seat"><a href="b7"><img src="images/whatson_images/seat_middle.png" alt="Seat b7"></a></div>
+							    <div class="seat"><a href="b8"><img src="images/whatson_images/seat_middle.png" alt="Seat b8"></a></div>
+							    <div class="seat"><a href="b9"><img src="images/whatson_images/seat_middle.png" alt="Seat b9"></a></div>
+							    <div class="seat"><a href="b10"><img src="images/whatson_images/seat_middle.png" alt="Seat b10"></a></div>
+							    <div class="seat"><a href="b11"><img src="images/whatson_images/seat_middle.png" alt="Seat b11"></a></div>
+							    <div class="seat"><a href="b12"><img src="images/whatson_images/seat_middle.png" alt="Seat b12"></a></div>
+							    <div class="seat"><a href="b13"><img src="images/whatson_images/seat_middle.png" alt="Seat b13"></a></div>
+							    <div class="seat"><a href="b14"><img src="images/whatson_images/seat_middle.png" alt="Seat b14"></a></div>
+							    <div class="seat"><a href="b15"><img src="images/whatson_images/seat_middle.png" alt="Seat b15"></a></div>
+							    <div class="seat"><a href="b16"><img src="images/whatson_images/seat_middle.png" alt="Seat b16"></a></div>
+							</div>
+
+							<div class="row-c">
+							    <div class="seat"><a href="c1"><img src="images/whatson_images/seat_middle.png" alt="Seat c1"></a></div>
+							    <div class="seat"><a href="c2"><img src="images/whatson_images/seat_middle.png" alt="Seat c2"></a></div>
+							    <div class="seat"><a href="c3"><img src="images/whatson_images/seat_middle.png" alt="Seat c3"></a></div>
+							    <div class="seat"><a href="c4"><img src="images/whatson_images/seat_middle.png" alt="Seat c4"></a></div>
+							    <div class="seat"><a href="c5"><img src="images/whatson_images/seat_middle.png" alt="Seat c5"></a></div>
+							    <div class="seat"><a href="c6"><img src="images/whatson_images/seat_middle.png" alt="Seat c6"></a></div>
+							    <div class="seat"><a href="c7"><img src="images/whatson_images/seat_middle.png" alt="Seat c7"></a></div>
+							    <div class="seat"><a href="c8"><img src="images/whatson_images/seat_middle.png" alt="Seat c8"></a></div>
+							    <div class="seat"><a href="c9"><img src="images/whatson_images/seat_middle.png" alt="Seat c9"></a></div>
+							    <div class="seat"><a href="c10"><img src="images/whatson_images/seat_middle.png" alt="Seat c10"></a></div>
+							    <div class="seat"><a href="c11"><img src="images/whatson_images/seat_middle.png" alt="Seat c11"></a></div>
+							    <div class="seat"><a href="c12"><img src="images/whatson_images/seat_middle.png" alt="Seat c12"></a></div>
+							    <div class="seat"><a href="c13"><img src="images/whatson_images/seat_middle.png" alt="Seat c13"></a></div>
+							    <div class="seat"><a href="c14"><img src="images/whatson_images/seat_middle.png" alt="Seat c14"></a></div>
+							    <div class="seat"><a href="c15"><img src="images/whatson_images/seat_middle.png" alt="Seat c15"></a></div>
+							    <div class="seat"><a href="c16"><img src="images/whatson_images/seat_middle.png" alt="Seat c16"></a></div>
+							</div>
+
+							<div class="row-d">
+							    <div class="seat"><a href="d1"><img src="images/whatson_images/seat_middle.png" alt="Seat d1"></a></div>
+							    <div class="seat"><a href="d2"><img src="images/whatson_images/seat_middle.png" alt="Seat d2"></a></div>
+							    <div class="seat"><a href="d3"><img src="images/whatson_images/seat_middle.png" alt="Seat d3"></a></div>
+							    <div class="seat"><a href="d4"><img src="images/whatson_images/seat_middle.png" alt="Seat d4"></a></div>
+							    <div class="seat"><a href="d5"><img src="images/whatson_images/seat_middle.png" alt="Seat d5"></a></div>
+							    <div class="seat"><a href="d6"><img src="images/whatson_images/seat_middle.png" alt="Seat d6"></a></div>
+							    <div class="seat"><a href="d7"><img src="images/whatson_images/seat_middle.png" alt="Seat d7"></a></div>
+							    <div class="seat"><a href="d8"><img src="images/whatson_images/seat_middle.png" alt="Seat d8"></a></div>
+							    <div class="seat"><a href="d9"><img src="images/whatson_images/seat_middle.png" alt="Seat d9"></a></div>
+							    <div class="seat"><a href="d10"><img src="images/whatson_images/seat_middle.png" alt="Seat d10"></a></div>
+							    <div class="seat"><a href="d11"><img src="images/whatson_images/seat_middle.png" alt="Seat d11"></a></div>
+							    <div class="seat"><a href="d12"><img src="images/whatson_images/seat_middle.png" alt="Seat d12"></a></div>
+							    <div class="seat"><a href="d13"><img src="images/whatson_images/seat_middle.png" alt="Seat d13"></a></div>
+							    <div class="seat"><a href="d14"><img src="images/whatson_images/seat_middle.png" alt="Seat d14"></a></div>
+							    <div class="seat"><a href="d15"><img src="images/whatson_images/seat_middle.png" alt="Seat d15"></a></div>
+							    <div class="seat"><a href="d16"><img src="images/whatson_images/seat_middle.png" alt="Seat d16"></a></div>
+							</div>
+
+							<div class="row-e">
+							    <div class="seat"><a href="e1"><img src="images/whatson_images/seat_middle.png" alt="Seat e1"></a></div>
+							    <div class="seat"><a href="e2"><img src="images/whatson_images/seat_middle.png" alt="Seat e2"></a></div>
+							    <div class="seat"><a href="e3"><img src="images/whatson_images/seat_middle.png" alt="Seat e3"></a></div>
+							    <div class="seat"><a href="e4"><img src="images/whatson_images/seat_middle.png" alt="Seat e4"></a></div>
+							    <div class="seat"><a href="e5"><img src="images/whatson_images/seat_middle.png" alt="Seat e5"></a></div>
+							    <div class="seat"><a href="e6"><img src="images/whatson_images/seat_middle.png" alt="Seat e6"></a></div>
+							    <div class="seat"><a href="e7"><img src="images/whatson_images/seat_middle.png" alt="Seat e7"></a></div>
+							    <div class="seat"><a href="e8"><img src="images/whatson_images/seat_middle.png" alt="Seat e8"></a></div>
+							    <div class="seat"><a href="e9"><img src="images/whatson_images/seat_middle.png" alt="Seat e9"></a></div>
+							    <div class="seat"><a href="e10"><img src="images/whatson_images/seat_middle.png" alt="Seat e10"></a></div>
+							    <div class="seat"><a href="e11"><img src="images/whatson_images/seat_middle.png" alt="Seat e11"></a></div>
+							    <div class="seat"><a href="e12"><img src="images/whatson_images/seat_middle.png" alt="Seat e12"></a></div>
+							    <div class="seat"><a href="e13"><img src="images/whatson_images/seat_middle.png" alt="Seat e13"></a></div>
+							    <div class="seat"><a href="e14"><img src="images/whatson_images/seat_middle.png" alt="Seat e14"></a></div>
+							    <div class="seat"><a href="e15"><img src="images/whatson_images/seat_middle.png" alt="Seat e15"></a></div>
+							    <div class="seat"><a href="e16"><img src="images/whatson_images/seat_middle.png" alt="Seat e16"></a></div>
+							</div>
+
+							<div class="row-f">
+							    <div class="seat"><a href="f1"><img src="images/whatson_images/seat_middle.png" alt="Seat f1"></a></div>
+							    <div class="seat"><a href="f2"><img src="images/whatson_images/seat_middle.png" alt="Seat f2"></a></div>
+							    <div class="seat"><a href="f3"><img src="images/whatson_images/seat_middle.png" alt="Seat f3"></a></div>
+							    <div class="seat"><a href="f4"><img src="images/whatson_images/seat_middle.png" alt="Seat f4"></a></div>
+							    <div class="seat"><a href="f5"><img src="images/whatson_images/seat_middle.png" alt="Seat f5"></a></div>
+							    <div class="seat"><a href="f6"><img src="images/whatson_images/seat_middle.png" alt="Seat f6"></a></div>
+							    <div class="seat"><a href="f7"><img src="images/whatson_images/seat_middle.png" alt="Seat f7"></a></div>
+							    <div class="seat"><a href="f8"><img src="images/whatson_images/seat_middle.png" alt="Seat f8"></a></div>
+							    <div class="seat"><a href="f9"><img src="images/whatson_images/seat_middle.png" alt="Seat f9"></a></div>
+							    <div class="seat"><a href="f10"><img src="images/whatson_images/seat_middle.png" alt="Seat f10"></a></div>
+							    <div class="seat"><a href="f11"><img src="images/whatson_images/seat_middle.png" alt="Seat f11"></a></div>
+							    <div class="seat"><a href="f12"><img src="images/whatson_images/seat_middle.png" alt="Seat f12"></a></div>
+							    <div class="seat"><a href="f13"><img src="images/whatson_images/seat_middle.png" alt="Seat f13"></a></div>
+							    <div class="seat"><a href="f14"><img src="images/whatson_images/seat_middle.png" alt="Seat f14"></a></div>
+							    <div class="seat"><a href="f15"><img src="images/whatson_images/seat_middle.png" alt="Seat f15"></a></div>
+							    <div class="seat"><a href="f16"><img src="images/whatson_images/seat_middle.png" alt="Seat f16"></a></div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+    	<!-- footer section -->
+		<footer>
+
+			<!-- return to top of page dot for tab control/screenreader with href back_to_top to relocate-->
+			<div id="return">
+		    	<a href="#back_to_top"><img src="https://www.csuci.edu/images/spacer.gif" border="1" alt="Return to top of page"></a> 
+			</div>
+
+			<!-- footer social media section -->
+			<div class="social">
+			    <div>
+			        <h3>Social Media</h3>
+			        <ol>
+			            <li>
+			                <a href="https://www.facebook.com/citymaxbelfast" target="_blank">
+			                    <img src="images/default_images/facebook.png" width = "30px" alt="Facebook">
+			                </a>
+			            </li>
+			            <li>
+			                <a href="https://twitter.com/citymaxbelfast" target="_blank">
+			                    <img src="images/default_images/x.png" width="30px" alt="X">
+			                </a>
+			            </li>
+			            <li>
+			                <a href="https://www.instagram.com/citymaxbelfast" target="_blank">
+			                    <img src="images/default_images/insta.png" width="30" alt="Instagram">
+			                </a>
+			            </li>
+			        </ol>
+			    </div>
+			</div>
+
+
+		    <!-- footer contact section -->
+			</div>
+        	<div class="contact-info">
+	        	<div>
+		        	<h3>Contact Information</h3>
+		    	</div>
+		    	<div>
+			        <p>Citymax Cinema<br>23 Movie Street<br>Belfast<br>County Antrim<br>BT37 9AX<br>Email: citymax@gmail.com<br>
+			           Phone: 028 906543333
+			        </p>
+		        </div>	       
+		    </div>
+
+		    <!-- footer opening hours section -->
+	        <div class="opening-hours">
+	        	<div>
+		        	<h3>Opening Hours</h3>
+		    	</div>
+		    	<div>
+			        <p>Mon 11:00 AM - 1:00 AM<br>Tue 11:00 AM - 1:00 AM<br>Wed 11:00 AM - 1:00 AM<br>
+			           Thu 11:00 AM - 1:00 AM<br>Fri 11:00 AM - 1:00 AM<br>Sat 11:00 AM - 1:00 AM<br>Sun 11:00 PM - 1:00 AM
+			        </p>
+		        </div>	       
+		    </div>
+		</footer>		
+	</body>
+</html>

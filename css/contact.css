@@ -1,0 +1,430 @@
+
+/*************** ACCESSIBILITY ***************/
+
+/* accessibilty skip to main nav-bar */
+#skip {
+  background-color: black;
+  line-height: 1px;
+}
+
+
+/* accessiblity contrast eye settings */
+.contrast-b {
+  width: 20px;
+  position: absolute;
+  left: 120px;
+  top: 74px;
+  cursor: pointer; 
+}
+
+
+/**************** NAVBAR ***************/
+
+/* navigation bar settings */
+.nav {
+  height: 20vwvw;
+  max-width: 100vw;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 2px;
+  padding-right: 2px;
+}
+
+
+/* navigation bar font settings */
+.nav-bar a {
+  width: auto;
+  text-decoration: none;
+  color: whitesmoke ;
+  padding-right: 15px;
+  font-size: 14px;
+  font-family: "Helvetica", "Arial", "sans-serif";
+  padding-bottom: 5px;
+}
+
+.nav-bar a:hover {
+  color: red;
+}
+
+.dropdown-toggle {
+  background: none; /* Remove default button background */
+  border: none; /* Remove default button border */
+  box-shadow: none; /* Remove default button box shadow */
+}
+
+
+.dropdown-menu .dropdown-item {
+  width: auto;
+  text-decoration: none;
+  color: black ;
+  padding-right: 15px;
+  font-size: 14px;
+  font-family: "Helvetica", "Arial", "sans-serif";
+  padding-bottom: 5px;
+}
+.custom-icon {
+  width: 152px;
+}
+
+.dropdown-menu {
+  width: 150px;
+  background-color: #fff; /* Background color of the dropdown menu */
+}
+
+
+.dropdown-menu .dropdown-item:hover {
+  color: red; /* Background color on hover */
+}
+
+#menu {
+  display: none;
+}
+
+/* navigation bar company logo settings */
+.logo img {
+  height: 80px;
+  width: auto;
+  margin-left: 5px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+
+/**************** BODY ***************/
+
+body {
+  background: linear-gradient(to bottom, #000, #424242, #000);
+}
+
+
+
+/*************** SECTION 1 ***************/
+
+.heading {
+  text-align: center;
+  align-items: center;
+}
+
+.heading img {
+  width: 15vw;
+}
+.heading h1 {
+  font-family: "Helvetica", "Arial", "sans-serif";
+  font-size: clamp(30px, 4vw, 100px);
+  font-weight: 600;
+  color: white;
+  margin-top: 50px;
+  text-shadow: 0 0 15px #d0312d, 0 0 5px;
+}
+
+.heading p {
+  all: unset;
+  font-size: clamp(16px, 1vw, 32px);
+  color: white;
+}
+
+/* section 1 flex/alignment settings */
+.section-1 {
+  display: flex;
+  justify-content: center;
+  min-height: 800px; 
+}
+
+
+
+
+/* section 1 customer support image settings */
+.section-1 img {
+  width: 31vw;
+  min-width: 490px;
+  margin-top: 50px;
+  margin-right: 100px;
+}
+
+
+/* contact form settings */
+.contact-form {
+  text-align: left;
+}
+
+
+/* remove ul list bullet points */
+form ul {
+  list-style-type: none;
+}
+
+
+/* contact form heading h1 settings */
+.contact-form h1 {
+  font-family: "Helvetica", "Arial", "sans-serif";
+  font-size: max(2vw, 20px);
+  font-weight: 600;
+  color: whitesmoke;
+  text-align: left;
+  margin-left: 30px;
+  margin-top: 50px;
+  text-shadow: 0 0 15px #d0312d, 0 0 5px;
+  margin-bottom: 10px;
+}
+
+
+/* form text/date input box settings */
+form input[type="text"], form input[type="date"]{
+  width: 400px; 
+  height: 25px; 
+  padding: 10px;
+}
+
+
+/* form accessiblity label settings */
+label {
+  text-align: left; 
+  display: flex; 
+  font-size: 12px;
+  font-weight: 600;
+  padding-top: 6px;
+  color: whitesmoke;
+}
+
+
+/* form heading h2 settings */
+.contact-form h2 {
+  text-align: left;
+  margin-left: 30px;
+  font-size: 12px;
+  padding-top: 0px;
+  color: whitesmoke;
+}
+
+
+/* form submit button settings */
+#submitButton {
+  all: unset;
+  text-decoration: none;
+  align-items: center; 
+  text-align: center;
+  align-content: center;
+  font-family: "Helvetica", "Arial", "sans-serif";
+  font-size: clamp(16px, 1vw, 24px);
+  font-weight: 600;
+  color: black;
+  margin-left: 40px;
+
+  color: white;
+  text-shadow: 0 0 15px #d0312d, 0 0 5px;
+  cursor: pointer;
+  border: 2px solid orangered;
+  background-color: black;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+
+/* form button hover settings */
+#submitButton:hover {
+  background-color: seagreen;
+  text-shadow: none;
+}
+
+
+/**************** FOOTER ****************/
+
+
+/* accessibilty back to top settings */
+#back_to_top {
+  background-color: black;
+  line-height: 1px;
+}
+
+
+/* footer background settings */
+footer {
+  background-color: black;
+  width: 100%;
+  display: flex;
+}
+
+
+/* overview, contact info and opening hours flex/alignment settings */
+.overview, .contact-info, .opening-hours {
+  padding-top: 10px;
+  text-align: left;
+  flex: 1;
+}
+
+
+/* opening hours, contact info font settings */
+.opening-hours, .contact-info {
+  font-weight: unset;
+  font-size: clamp(10px, 2vw, 12px);
+  font-family: "Helvetica", "Arial", "sans-serif";
+  font-weight: bold;
+  padding-bottom: 5px;
+  color: whitesmoke;
+  font-weight: 100;
+}
+
+
+/* contact info heading h3 font settings */
+.contact-info h3, .opening-hours h3, .overview h3 {
+  font-size: clamp(12px, 2vw, 16px);
+  font-family: "Helvetica", "Arial", "sans-serif";
+  font-weight: bold;
+  padding-bottom: 5px;
+  color: whitesmoke;
+  font-weight: 100;
+}
+
+
+/* overview font settings */
+.overview a {
+  text-decoration: unset;
+  font-weight: unset;
+  font-size: clamp(10px, 2vw, 12px);
+  font-family: "Helvetica", "Arial", "sans-serif";
+  font-weight: bold;
+  padding-bottom: 5px;
+  color: whitesmoke;
+  font-weight: 100;
+}
+
+
+/* overview bullet point color */
+.overview {
+  color: whitesmoke;
+}
+
+
+/* overview heading h3 margin/alignment setting */
+.overview h3 {
+  margin-left: 20px;
+}
+
+
+/*************** FOOTER **************/
+
+
+#back_to_top {
+  background-color: black;
+  line-height: 1px;
+}
+
+footer {
+  background-color: black;
+  width: 100%;
+  display: flex;
+}
+
+.social li {
+  list-style-type: none;
+  padding: 5px;
+}
+
+.social, .contact-info, .opening-hours {
+  padding-top: 10px;
+  flex: 1;
+}
+
+.social, .contact-info, .opening-hours {
+  font-weight: unset;
+  font-size: clamp(10px, 2vw, 12px);
+  font-family: "Helvetica", "Arial", "sans-serif";
+  font-weight: bold;
+  padding-bottom: 5px;
+  color: white;
+  font-weight: 100;
+
+}
+
+.contact-info h4, .opening-hours h4, .social h4 {
+  all: unset;
+  font-family: "Helvetica", "Arial", "sans-serif";
+  font-size: clamp(12px, 1vw, 22px);
+  font-weight: 600;
+  color: white;
+  margin: 0 auto;
+  text-shadow: 0 0 15px #d0312d, 0 0 5px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social img {
+  width: 25px;
+}
+
+.social h4 {
+  margin-left: 40px;
+}
+
+
+/************** DEVICE WIDTH ****************/
+
+
+/* device width settings 1080px */
+@media (max-width: 1080px) {
+
+  .nav-bar {
+    display: none;
+  }
+
+  #menu {
+    display: block;
+  }
+
+
+
+
+  .section-1 {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    min-height: 800px; 
+  }
+
+  .heading {
+    padding: 10px;
+  }
+
+  label {
+    all: unset;
+    text-align: center; 
+    display: flex; 
+    font-size: 12px;
+    font-weight: 600;
+    padding-top: 6px;
+    color: whitesmoke;
+  }
+
+  .contact-form {
+    align-self: center;
+  }
+
+  form input[type="text"], form input[type="date"]{
+    width: 300px; 
+    height: 25px; 
+    padding: 10px;
+  }
+
+  .section-1 img {
+    display: none;
+}
+
+  .contact-form h1 {
+    font-family: "Helvetica", "Arial", "sans-serif";
+    font-size: max(2vw, 20px);
+    font-weight: 600;
+    color: whitesmoke;
+    text-align: left;
+    margin-left: 30px;
+    text-shadow: 0 0 15px #d0312d, 0 0 5px;
+    margin-bottom: 10px;
+  }
+
+
+}
+

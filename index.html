@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name="description" content="Citymax Cinema Belfast">
+	    <title>Citymax Cinema Homepage</title>
+
+		<!-- css stylesheets -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+			crossorigin="anonymous">
+	    <link rel="stylesheet" href="css/index.css">
+	</head>
+	<body>
+
+		<!-- javascript -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="javascript/index.js"></script>
+	
+		<!-- accessibility return mark -->
+		<div id="back_to_top">
+		</div>
+
+		<!-- accessiblilty skip -->
+		<div id="skip">
+		    <a href="#main"><img src="https://www.csuci.edu/images/spacer.gif" border="1" alt="Skip Global Navigation"></a>
+		</div>
+
+		<!--  navigation bar -->
+		<nav class="nav">
+			<div class="logo">
+    			<a href="index.html"><img src="images/default_images/citymax.png" alt="Citymax Logo Home Button"></a>
+			</div>
+    		<div>
+    			<img class="contrast-b" id="eye" onclick="toggleContrast()" tabindex="0" 
+    			onkeypress="toggleContrast(event)" src="images/default_images/eye.png" alt="Contrast logo" width="20px" 
+    			alt="Contrast mode">
+    		</div>
+            <div class="nav-bar">
+            	<a href="index.html">Home</a>
+            	<a href="nowshowing.html">Now Showing</a>
+            	<a href="comingsoon.html">Coming Soon</a>
+            	<a href="tickets.html">Tickets</a>
+            	<a href="competition.html">Competition</a>
+            	<a href="contact.html">Register</a>
+        	</div>
+
+        	<!-- reponsive navigation bar dropdown menu -->
+			<div class="dropdown-center" id="menu">
+			    <img class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" src="images/default_images/menu.png"  alt="Dropdown Menu" height="40px" width="60px">
+			  <div class="dropdown-menu">
+			  	<a class="dropdown-item" href="index.html">Home</a>
+			    <a class="dropdown-item" href="nowshowing.html">Now Showing</a>
+			    <a class="dropdown-item" href="comingsoon.html">Coming Soon</a>
+			    <a class="dropdown-item" href="tickets.html">Tickets</a>
+			    <a class="dropdown-item" href="competition.html">Competition</a>
+			    <a class="dropdown-item" href="contact.html">Register</a>
+			  </div>
+			</div>
+		</nav>
+   
+		<!-- bootstrap carousel -->
+		<div id="home-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+		    <div class="carousel-inner">
+			    <div class="carousel-item active c-item">
+			    	<img src="images/index_images/deadpool.webp" id="slide1" class="d-block w-100 c-img" alt="Deadpool & Wolverine Image">
+			    	<div class="carousel-caption">
+				      	<a  alt="Coming soon button" href="comingsoon.html">Coming Soon</a>
+			      	</div>			    
+			    </div>
+			    <div class="carousel-item c-item">
+			      <img src="images/index_images/ghostbusters.webp" id="slide2" class="d-block w-100 c-img" alt="Ghostbusters Frozen Empire image">
+			        <div class="carousel-caption">
+				      	<a  alt="Buy tickets button" href="tickets.html">Buy Tickets</a>
+				    </div>
+			    </div>
+			    <div class="carousel-item c-item">
+			      <img src="images/index_images/dune.webp" id="slide3" class="d-block w-100 c-img" alt="Citymax logo main page">
+			        <div class="carousel-caption">
+				      	<a alt="More info" href="#dune">More info</a>
+				    </div>
+
+				    </div>
+			    </div>
+			</div>
+		</div>
+
+
+		<!-- section 1 -->
+		<div class="section-1">
+			<div class="column-1">
+
+				<!-- navbar skip to main content locator-->
+				<div id="main">
+				</div>
+
+				<h1>Rediscover Cinema</h1>
+				<p>CityMax is Belfast's newest cinematic destination, where every visit promises an unforgettable
+				   adventure into the world of film. Situated in the bustling heart of the city, our state-of-the-art theater invites you to indulge in the ultimate movie-going experience.<br><br>Immerse yourself in the magic of the silver screen with our cutting-edge audiovisual technology. Whether you're catching the latest blockbuster release, a timeless classic, or an indie gem, our diverse selection ensures there's something for every movie buff. Join us for special events, exclusive premieres, themed screenings, and vibrant film festivals. CityMax offers an unforgettable experience for all.<br><br>Rediscover the joy of cinema with us and embark on an unforgettable adventure through the magic of storytelling at CityMax Cinema.
+				</p>
+			</div>
+			<div class="column-2">
+				<img src="images/index_images/seats.webp" alt="Image of inside a Citymax cinema theatre">
+			</div>
+		</div>
+
+		<!-- unlimited popcorn section -->
+		<div class="seperator-popcorn">
+			<img id="popcorn" src="images/index_images/popcorn.webp" height="130px" alt="Citymax popcorn bucket image">
+			<div id="popcorn-txt">
+				<h2>Unlimited popcorn refills!</h2>
+				<p>With every large bucket purchase!</p>
+				<button id="popcorn-show" type="button">More info</button>
+			</div>
+		</div>
+
+		<!-- unlimited popcorn expanded section -->
+		<div class="seperator-popcorn-show" style="display: none;">
+			<img id="popcorn" src="images/index_images/popcorn.webp" height="350px" alt="Citymax popcorn bucket image">
+			<div id="unlimted-txt">
+				<h2>Get unlimited popcorn refills!</h2>
+				<p>Embark on a popcorn-filled journey with our irresistible offer: unlimited* refills on every large bucket of popcorn purchased at Citymax.<br><br>Indulge in the savory delight of warm kernels, with each purchase granting you the pleasure of endless refills.<br><br>Whether you're enjoying a blockbuster movie or catching up with friends, our popcorn refill offer ensures that your cinematic experience is always accompanied by the comforting taste of freshly popped popcorn.</p>
+			   <p id="purchase"><br><br>* With every purchase of a large popcorn bucket at £7.99.<p>
+		    </div>
+		    <div>
+		   		<button id="popcorn-hide" type="button">^</button>
+	   	    </div>
+		</div>
+
+		<!-- 3 option selector section -->
+		<div class="section-2">
+			<div class="container text-center">
+			  <div class="row">
+				  	<ol class="section-2-list">
+				  		<div class="col">
+				        	<li class="default" id="promotions">PROMOTIONS</li>
+			        	</div>
+						<div class="col">
+						    <li id="news">MOVIE NEWS</li>
+				    	</div>
+				    	<div class="col">
+				    		<li id="jobs">JOBS</li>
+				    	</div>
+			    	</ol>
+			  </div>
+			  <div class="row">
+			    <div class="col" id="section-2-image">
+			    	<h2>2 for 1 Cinema Tickets!</h2>
+			    	<img id="default" src="images/index_images/tickets.webp" alt="This is an image of CityMax 2 for 1 ticket offer.">
+			    </div>
+			    <div class="col" id="section-2-text">	
+					<p>Lights, camera, action! Dive into the ultimate movie experience with our special 
+					   offer — MOVIE MAGIC MONDAYS!<br><br> Every Monday, get two cinema tickets for the price of one! Whether you're craving heart-pounding action, side-splitting comedy, or heartwarming drama, Movie Magic Mondays has something for everyone.<br><br>Don't miss out on this blockbuster deal! Grab your popcorn and join us for a double dose of cinematic fun!
+					</p>
+			    </div>
+			  </div>
+		    </div>		
+		</div>
+
+		<!-- movie of the month section -->
+		<div id="dune" class="section-3">
+			<div>
+				<button id="dune-trailer">Watch Trailer</button>
+			</div>
+			<div class="section-3-text">	
+				<p>Experience the magnificent "Dune: Part Two," our movie of the month.<br><br>
+				   Directed by Denis Villeneuve and co-written with Jon Spaihts, this sequel continues the epic saga introduced in the 2021 blockbuster hit.<br><br>Don't miss your chance to witness the next chapter in this epic tale of destiny and survival.
+				</p>
+			</div>
+			<div class="video">
+					<iframe title="Dune Part Two Trailer" src="https://www.youtube.com/embed/U2Qp5pL3ovA" frameborder=
+					"0" allowfullscreen></iframe>
+			</div>
+			<div class="dune-logo">
+		    	<img id="dune-part-two" src="images/index_images/dune_logo.webp"  alt="Dune part two logo">
+		    </div>
+			<div class="section-3-header">
+				<h3>Movie of the Month</h3>
+			</div>			
+    	</div>
+
+    	<!-- footer section -->
+		<footer>
+
+			<!-- return to top of page dot for tab control/screenreader with href back_to_top to relocate-->
+			<div id="return">
+		    	<a href="#back_to_top"><img src="https://www.csuci.edu/images/spacer.gif" border="1" alt="Return to top of page"></a> 
+			</div>
+
+			<!-- footer social media section -->
+			<div class="social">
+			    <div>
+			        <h4>Social Media</h4>
+			        <ol>
+			            <li>
+			                <a href="https://www.facebook.com/citymaxbelfast" target="_blank">
+			                    <img src="images/default_images/facebook.png" width = "30px" alt="Facebook">
+			                </a>
+			            </li>
+			            <li>
+			                <a href="https://twitter.com/citymaxbelfast" target="_blank">
+			                    <img src="images/default_images/x.png" width="30px" alt="X">
+			                </a>
+			            </li>
+			            <li>
+			                <a href="https://www.instagram.com/citymaxbelfast" target="_blank">
+			                    <img src="images/default_images/insta.png" width="30" alt="Instagram">
+			                </a>
+			            </li>
+			        </ol>
+			    </div>
+			</div>
+
+
+		    <!-- footer contact section -->
+			</div>
+        	<div class="contact-info">
+	        	<div>
+		        	<h4>Contact Information</h4>
+		    	</div>
+		    	<div>
+			        <p>Citymax Cinema<br>23 Movie Street<br>Belfast<br>County Antrim<br>BT37 9AX<br>Email: citymax@gmail.com<br>
+			           Phone: 028 906543333
+			        </p>
+		        </div>	       
+		    </div>
+
+		    <!-- footer opening hours section -->
+	        <div class="opening-hours">
+	        	<div>
+		        	<h4>Opening Hours</h4>
+		    	</div>
+		    	<div>
+			        <p>Mon 11:00 AM - 1:00 AM<br>Tue 11:00 AM - 1:00 AM<br>Wed 11:00 AM - 1:00 AM<br>
+			           Thu 11:00 AM - 1:00 AM<br>Fri 11:00 AM - 1:00 AM<br>Sat 11:00 AM - 1:00 AM<br>Sun 11:00 PM - 1:00 AM
+			        </p>
+		        </div>	       
+		    </div>
+		</footer>				
+	</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta description="Citymax Contact" content="Citymax Cinema Belfast">  	
+	    <title>Citymax Contact</title>
+		<!-- bootstrap style ref -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<!-- link to custom css style sheet -->
+	    <link href="css/contact.css" rel="stylesheet">
+	</head>
+	<body>
+
+		<!-- link to google maps api -->
+		<script src="https://maps.googleapis.com/maps/api/js?key=&
+			libraries=places">
+		</script>
+
+		<!-- link to javascript  -->
+		<script src="jquery/jquery-3.7.1.min.js"></script>
+						
+		<!-- accessibility return mark -->
+		<div id="back_to_top">
+		</div>
+
+		<!-- accessiblilty skip -->
+		<div id="skip">
+		    <a href="#main"><img src="https://www.csuci.edu/images/spacer.gif" border="1" alt="Skip Global Navigation"></a>
+		</div>
+
+		<!--  navigation bar -->
+		<nav class="nav">
+			<div class="logo">
+    			<a href="index.html"><img src="images/default_images/citymax.png" alt="Citymax Logo Home Button"></a>
+			</div>
+    		<div>
+    			<img class="contrast-b" id="eye" onclick="toggleContrast()" tabindex="0" 
+    			onkeypress="toggleContrast(event)" src="images/default_images/eye.png" alt="Contrast logo" width="20px" 
+    			alt="Contrast mode">
+    		</div>
+            <div class="nav-bar">
+            	<a href="index.html">Home</a>
+            	<a href="nowshowing.html">Now Showing</a>
+            	<a href="comingsoon.html">Coming Soon</a>
+            	<a href="tickets.html">Tickets</a>
+            	<a href="competition.html">Competition</a>
+            	<a href="contact.html">Register</a>
+        	</div>
+
+        	<!-- reponsive navigation bar dropdown menu -->
+			<div class="dropdown-center" id="menu">
+			    <img class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" src="images/default_images/menu.png"  alt="Dropdown Menu" height="40px" width="60px">
+			  <div class="dropdown-menu">
+			  	<a class="dropdown-item" href="index.html">Home</a>
+			    <a class="dropdown-item" href="nowshowing.html">Now Showing</a>
+			    <a class="dropdown-item" href="comingsoon.html">Coming Soon</a>
+			    <a class="dropdown-item" href="tickets.html">Tickets</a>
+			    <a class="dropdown-item" href="competition.html">Competition</a>
+			    <a class="dropdown-item" href="contact.html">Register</a>
+			  </div>
+			</div>
+		</nav>
+	   
+
+
+<!-- ********** SECTION 1 ********** -->
+		<div class="heading">
+    		<h1>Citymax Newsletter</h1>
+    		<p>Register now to receive exclusive offers, discounts, and updates straight to your inbox.</p>
+		</div>
+    	<div class="section-1">
+    		<div>
+    			<!-- section 1 customer support image souce settings -->
+				<img id="cust" src="images/contact_images/sign_up.webp" role="presentation">
+			</div>
+
+			<!-- contact form -->
+	    	<div class="contact-form">
+	    		<form id="form">
+
+	    			<!-- navbar skip to main content locator-->
+	    			<div id="main">
+					</div>
+
+					<!-- form heading h1 -->
+	    			<h1>Contact Form</h1>
+
+	    			<!--  form heading h2 -->
+	    			<h2>* Indicates required field.  Northern Ireland residents only.</h2>
+	    			 <ul>
+	    			 	<!-- form entry label names for accessibilty and text input boxes for user information -->
+	    			 	<li>
+	    			 		<label for="firstName">First name *</label>
+				        		<input type="text" id="firstName" placeholder="First Name" autocomplete="off">
+				        </li>
+				        <li>
+							<label for="surname">Surname *</label>
+				        		<input type="text" id="surname" placeholder="Surname" autocomplete="off">
+			        	</li>
+			        	<li>
+							<label for="dob">Date of birth *</label>
+		 						<input type="date" id="dob">
+	 					</li>
+	 					<li>
+		 					<label for="autocomplete-input">Address *</label>
+ 								<input id="autocomplete-input" type="text" placeholder="Enter your address">
+							</li>
+							<li>
+ 							<label for="postcode">Postcode *</label>
+				        		<input type="text" id="postcode" placeholder="Postcode" autocomplete="off">
+			        	</li>
+			        	<li>
+				        	<label for="tel">Mobile number *</label>
+				        		<input type="text" id="tel" placeholder="Mobile number"  autocomplete="off">
+			        	</li>
+			        	<li>
+				        	<label for="email">Email address *</label>
+				        		<input type="text" id="email" placeholder="Enter email address" autocomplete="off">
+			        	</li>
+			        	<li>
+				        	<label for="emailConfirm">Confirm email address *</label>
+				        		<input type="text" id="emailConfirm" placeholder="Confirm email address" 
+				        	autocomplete="off">
+				        </li>
+				    </ul>
+
+				    	<!-- form submit button -->
+				        <button id="submitButton" type="submit">Submit</button>
+		        </form>
+
+		        <!-- link to custom javascipt file for form validation -->
+		        <script src="javascript/contact.js"></script>
+	        </div>
+        </div>
+        
+		<!-- footer section -->
+		<footer>
+
+			<!-- return to top of page dot for tab control/screenreader with href back_to_top to relocate-->
+			<div id="return">
+		    	<a href="#back_to_top"><img src="https://www.csuci.edu/images/spacer.gif" border="1" alt="Return to top of page"></a> 
+			</div>
+
+			<!-- footer social media section -->
+			<div class="social">
+			    <div>
+			        <h4>Social Media</h4>
+			        <ol>
+			            <li>
+			                <a href="https://www.facebook.com/citymaxbelfast" target="_blank">
+			                    <img src="images/default_images/facebook.png" width = "30px" alt="Facebook">
+			                </a>
+			            </li>
+			            <li>
+			                <a href="https://twitter.com/citymaxbelfast" target="_blank">
+			                    <img src="images/default_images/x.png" width="30px" alt="X">
+			                </a>
+			            </li>
+			            <li>
+			                <a href="https://www.instagram.com/citymaxbelfast" target="_blank">
+			                    <img src="images/default_images/insta.png" width="30" alt="Instagram">
+			                </a>
+			            </li>
+			        </ol>
+			    </div>
+			</div>
+
+		    <!-- footer contact section -->
+        	<div class="contact-info">
+	        	<div>
+		        	<h4>Contact Information</h4>
+		    	</div>
+		    	<div>
+			        <p>Citymax Cinema<br>23 Movie Street<br>Belfast<br>County Antrim<br>BT37 9AX<br>Email: citymax@gmail.com<br>
+			           Phone: 028 906543333
+			        </p>
+		        </div>	       
+		    </div>
+
+		    <!-- footer opening hours section -->
+	        <div class="opening-hours">
+	        	<div>
+		        	<h4>Opening Hours</h4>
+		    	</div>
+		    	<div>
+			        <p>Mon 11:00 AM - 1:00 AM<br>Tue 11:00 AM - 1:00 AM<br>Wed 11:00 AM - 1:00 AM<br>
+			           Thu 11:00 AM - 1:00 AM<br>Fri 11:00 AM - 1:00 AM<br>Sat 11:00 AM - 1:00 AM<br>Sun 11:00 PM - 1:00 AM
+			        </p>
+		        </div>	       
+		    </div>
+		</footer>	
+	</body>
+</html>
+	    			
+	

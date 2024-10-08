@@ -1,0 +1,579 @@
+
+/*************** ACCESSIBILITY ***************/
+
+/* accessibilty skip to main nav-bar */
+
+#skip {
+  background-color: black;
+  line-height: 1px;
+}
+
+
+/* accessiblity contrast eye settings */
+
+.contrast-b {
+  width: 20px;
+  position: absolute;
+  left: 120px;
+  top: 74px;
+  cursor: pointer;
+}
+  
+/**************** NAVBAR ***************/
+
+/* navigation bar settings */
+
+.nav {
+  height: 20vwvw;
+  max-width: 100vw;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 2px;
+  padding-right: 2px;
+}
+
+.nav-bar a {
+  width: auto;
+  text-decoration: none;
+  color: whitesmoke ;
+  padding-right: 15px;
+  font-size: 14px;
+  font-family: "Helvetica", "Arial", "sans-serif";
+  padding-bottom: 5px;
+}
+
+.nav-bar a:hover {
+  color: seagreen;
+}
+
+
+/* responsive menu settings */
+
+
+.dropdown-toggle {
+  background: none; 
+  border: none; /
+  box-shadow: none; 
+}
+
+.dropdown-menu .dropdown-item {
+  width: auto;
+  text-decoration: none;
+  color: black ;
+  padding-right: 15px;
+  font-size: 14px;
+  font-family: "Helvetica", "Arial", "sans-serif";
+  padding-bottom: 5px;
+}
+
+
+.custom-icon {
+  width: 152px;
+}
+
+.dropdown-menu {
+  width: 150px;
+  background-color: #fff; 
+}
+
+
+.dropdown-menu .dropdown-item:hover {
+  color: seagreen; 
+}
+
+#menu {
+  display: none;
+}
+
+.logo img {
+  height: 80px;
+  width: auto;
+  margin-left: 5px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+/**************** BODY ***************/
+
+body {
+  background: linear-gradient(to bottom, #000, #424242, #000);
+}
+
+
+/*************** MAIN IMAGE/TITLE  SETTINGS ***************/
+
+.booking-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+}
+
+.booking-image h1 {
+  font-family: "Helvetica", "Arial", "sans-serif";
+  font-size: clamp(14px, 1vw 40px);
+  font-weight: 600;
+  color: white;
+  margin-top: 5px;
+  text-shadow: 0 0 15px #d0312d, 0 0 5px;
+}
+
+.booking-image #heading {
+  width: 20vw;
+}
+
+
+/****************** BOOKING SYSTEM LAYOUT ***************/
+
+.booking-columns {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+  align-content: center;
+  justify-content: center;
+}
+
+.booking-system {
+  height: auto;
+}
+
+.citymax-booking {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-right: 100px;
+  padding: 10px;
+}
+
+.citymax-booking h1 {
+  margin-top: unset;
+  font-family: "Helvetica", "Arial", "sans-serif";
+  font-size: 2vw;
+  font-weight: 600;
+  color: white;
+  margin-top: 5px;
+  text-shadow: 0 0 15px #d0312d, 0 0 5px;
+}
+
+.bill {
+  background-color: white;
+  width: 330px;
+  height: 650px;
+  margin-top: 20px;
+  text-align: left;
+  padding: 10.5px;
+  border: 2px solid orangered;
+}
+
+.bill-1 p, .bill-2 p {
+  text-align: left;
+}
+
+.shopping-window {
+  display: none; 
+  color: black; 
+  font-family: "Helvetica", "Arial", "sans-serif";
+  font-size: 16px; 
+  align-items: left; 
+  text-align: left;
+}
+
+.order img {
+  margin-bottom: 20px;
+}
+
+.order p {
+  font-size: 20px; 
+  font-weight: 800;
+
+}
+
+/************* JQUERY VALIDATOR PLUG-IN SETTINGS **************/
+
+#checkout-form {
+  align-items: left; 
+  text-align: left;
+}
+
+#checkout-form input {
+  all: unset;
+  margin-top: 20px;
+  width: 100%;
+  border: 1px solid orangered;
+}
+
+#checkout-form #name {
+  margin-top: 20px;
+}
+
+.check input {
+  all: unset;
+  width: 125px;
+  border: 1px solid orangered;
+}
+
+#checkout-form input[type="text"] {
+  font-size: 14px; 
+}
+
+#checkout-form .error {
+  margin: unset;
+  padding: unset;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 12px;
+}
+
+#checkout-form label.error {
+  width: auto;
+  display: inline;
+  color: orangered;
+}
+
+.checkout {
+  all: unset;
+  text-decoration: none;
+  font-family: "Helvetica", "Arial", "sans-serif";
+  font-size: 12px;
+  font-weight: 600;
+  color: black;
+  margin: 0 auto;
+  color: white;
+  cursor: pointer;
+  border: 2px solid black;
+  background-color: seagreen;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.checkout:hover {
+  text-decoration: none;
+  background-color: purple; 
+}
+
+.confirmation {
+  margin-top: 30px;
+  font-family: "Helvetica", "Arial", "sans-serif";
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+  margin-top: 50px;
+}
+
+
+
+.selected-seats {
+  margin-bottom: 20px;
+}
+
+
+/************ CHECKOUT BUTTON SETTINGS ***********/
+
+.submit {
+  all: unset;
+  text-decoration: none;
+  font-family: "Helvetica", "Arial", "sans-serif";
+  font-size: 12px;
+  font-weight: 600;
+  color: black;
+  margin: 0 auto;
+  color: white;
+  cursor: pointer;
+  border: 2px solid black;
+  background-color: seagreen;
+  padding: 5px;
+  margin-top: 10px;
+  width: 136px;
+  text-align: center;
+}
+
+.submit:hover {
+  background-color: purple;
+}
+
+.back-btn {
+  all: unset;
+  text-decoration: none;
+  font-family: "Helvetica", "Arial", "sans-serif";
+  font-size: 12px;
+  font-weight: 600;
+  color: black;
+  margin: 0 auto;
+  color: white;
+  cursor: pointer;
+  border: 2px solid black;
+  background-color: red;
+  padding: 5px;
+  margin-top: 10px;
+  width: 136px;
+  text-align: center;
+}
+
+.back-btn:hover {
+  background-color: purple;
+}
+
+ .time h1 {
+  font-family: "Helvetica", "Arial", "sans-serif";
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+  margin-top: 50px;
+}
+
+.select-movie, .select-date, .select-time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+  padding: 5px; 
+}
+
+.seat-legend {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  text-align: center; 
+}
+
+.seat-legend img {
+  width: 20px;
+  margin-top: 5px;
+}
+
+.seat-legend h2 {
+  font-family: "Helvetica", "Arial", "sans-serif";
+  font-size: clamp(12px, 1vw, 16px);
+  font-weight: 200;
+  color: white;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.screen {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+  border: 2px solid orangered; 
+  width: clamp(250px, 25vw, 400px); 
+  height: clamp(125px, 12vw, 200px);
+  padding: 20px; 
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+
+.screen img {
+    max-width: 90%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+.select-seats h3 {
+  color: white; 
+  text-align: left;
+  font-family: "Helvetica", "Arial", "sans-serif";
+  font-size: 16px;
+  color: black;
+  margin-top: 10px;
+}
+
+.seats {
+  align-items: center; 
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+
+.seat img {
+  padding: 5px;
+  width: clamp(25px, 2vw, 50px);
+  margin: 0;
+}
+
+.row-a, .row-b, .row-c, .row-d, .row-e, .row-f {
+  display: flex;
+}
+
+.seat {
+  display: flex;
+  flex-direction: column;
+}
+
+.select-movie,
+.select-date,
+.select-time {
+  margin-bottom: 5px;
+}
+
+select {
+  color: white; 
+  background-color: black; 
+  border: 1px solid orangered; 
+  padding: 5px; 
+  font-family: "Helvetica", "Arial", "sans-serif";
+  font-size: 16px; 
+  width: 250px;
+}
+
+option {
+  all: unset;
+  color: black; 
+  background-color: white; 
+}
+
+label {
+  color: white; 
+  font-family: "Helvetica", "Arial", "sans-serif";
+  font-size: 16px; 
+}
+
+
+
+/*************** FOOTER **************/
+
+
+#back_to_top {
+  background-color: black;
+  line-height: 1px;
+}
+
+footer {
+  background-color: black;
+  width: 100%;
+  display: flex;
+}
+
+.social li {
+  list-style-type: none;
+  padding: 5px;
+}
+
+.social, .contact-info, .opening-hours {
+  padding-top: 10px;
+  flex: 1;
+}
+
+.social, .contact-info, .opening-hours {
+  font-weight: unset;
+  font-size: clamp(10px, 2vw, 12px);
+  font-family: "Helvetica", "Arial", "sans-serif";
+  font-weight: bold;
+  padding-bottom: 5px;
+  color: white;
+  font-weight: 100;
+
+}
+
+.contact-info h3, .opening-hours h3, .social h3 {
+  all: unset;
+  font-family: "Helvetica", "Arial", "sans-serif";
+  font-size: clamp(12px, 1vw, 22px);
+  font-weight: 600;
+  color: white;
+  margin: 0 auto;
+  text-shadow: 0 0 15px #d0312d, 0 0 5px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social img {
+  width: 25px;
+}
+
+.social h3 {
+  margin-left: 40px;
+}
+
+
+/************** DEVICE WIDTH ****************/
+
+
+/* device width settings 1080px */
+@media (max-width: 1080px) {
+
+  .nav-bar {
+    display: none;
+  }
+
+  #menu {
+    display: block;
+  }
+
+  .nav-bar a {
+      font-size: 10px;
+  }
+
+
+.citymax-booking {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-right: unset;
+  padding: 10px;
+}
+
+.booking-columns {
+  all: unset;
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 30px;
+}
+
+
+.citymax-booking {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+}
+
+.citymax-booking img {
+  all: unset;
+  margin-left: unset;
+  width: 30vw;
+}
+
+.citymax-booking h1 {
+  margin-top: unset;
+  margin-left: unset;
+  font-family: "Helvetica", "Arial", "sans-serif";
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  margin-top: 5px;
+  text-shadow: 0 0 15px #d0312d, 0 0 5px;
+}
+.seat img {
+  width: 22px;
+  padding: 2px;
+}
+
+ .time h1 {
+  margin-top: 30px;
+}
+
