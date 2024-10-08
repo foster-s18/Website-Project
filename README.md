@@ -16,7 +16,7 @@ The contact form relies on the Google Maps API for the address auto-complete fea
 
 You can add your Google API key to the project by inserting it on **line 16** of the `contact.html` page.
 
-**This website is best viewed on desktop screens or iPhone Pro Max or similar-sized mobile devices.
+**This website is best viewed on desktop, iPhone Pro Max or similar-sized mobile devices.
 
 
 
