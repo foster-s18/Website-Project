@@ -5,7 +5,7 @@ Welcome to my first website build! This project is a cinema website that include
 ## Screenshots
 
 ### Home Page
-![Screenshot of Home Page](Screenshots/Home.png)
+![Screenshot of Home Page](screenshots/home.png)
 
 
 ## Features
