@@ -2,6 +2,13 @@
 
 Welcome to my first website build! This project is a cinema website that includes various features to enhance user experience, such as currently showing movies, upcoming releases, a ticket booking system, form validation, and an interactive quiz.
 
+## Screenshots
+
+### Home Page
+![Screenshot of Home Page](screenshots/home.png)
+
+### Ticket Booking System
+![Screenshot of Ticket Booking](screenshots/ticket-booking.png)
 ## Features
 
 - **Now Showing**: A section displaying the movies currently available in the cinema.
