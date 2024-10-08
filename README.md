@@ -7,17 +7,11 @@ Welcome to my first website build! This project is a cinema website that include
 ### Home Page
 ![Home Page](screenshots/home.png)
 
-### Now Showing Page
-![Now Showing](screenshots/nowShowing.png)
-
 ### Coming Soon Page
 ![Coming Soon](screenshots/comingsoon.png)
 
 ### Ticket Booking System
-![Ticket Booking System](screenshots/booking.png)
-
-
-
+![Ticket Booking System](screenshots/booking.png
 
 ## Features
 
