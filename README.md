@@ -10,8 +10,16 @@ Welcome to my first website build! This project is a cinema website that include
 - **Form Validation**: Ensures all user inputs are correctly filled out before submission.
 - **Quiz**: An engaging quiz for users to test their cinema knowledge.
 
-### Important Note
+### Important Notes
 
 The contact form relies on the Google Maps API for the address auto-complete feature. **I have removed the Google API key from this project for security reasons.** As a result, the contact form will not work correctly without an API key. 
 
 You can add your Google API key to the project by inserting it on **line 16** of the `contact.html` page.
+
+**This website is best viewed on desktop screens or iPhone Pro Max or similar-sized mobile devices.
+
+
+
+
+
+
