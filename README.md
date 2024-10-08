@@ -11,7 +11,7 @@ Welcome to my first website build! This project is a cinema website that include
 ![Coming Soon](screenshots/comingsoon.png)
 
 ### Ticket Booking System
-![Ticket Booking System](screenshots/booking.png
+![Ticket Booking System](screenshots/booking.png)
 
 ## Features
 
