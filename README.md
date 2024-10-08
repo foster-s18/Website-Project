@@ -13,6 +13,9 @@ Welcome to my first website build! This project is a cinema website that include
 ### Ticket Booking System
 ![Ticket Booking System](screenshots/booking.png)
 
+### Contact Form
+![Contact Form](screenshots/contact.png)
+
 ## Features
 
 - **Now Showing**: A section displaying the movies currently available in the cinema.
