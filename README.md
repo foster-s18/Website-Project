@@ -22,7 +22,7 @@ Welcome to my first website build! This project is a cinema website that include
 - **Coming Soon**: A preview of upcoming movie releases.
 - **Ticket Booking System**: A user-friendly interface for booking tickets online, which uses local storage to replicate the functionality of a real booking system.
 - **Form Validation**: Ensures all user inputs are correctly filled out before submission.
-- **Quiz**: An engaging quiz for users to test their cinema knowledge.
+- **Quiz**: An interactive quiz for users to test their cinema knowledge.
 
 ### Important Notes
 
