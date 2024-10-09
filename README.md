@@ -1,6 +1,6 @@
 # Cinema Website
 
-Welcome to my first website build! This project is a cinema website that includes various features to enhance user experience, such as currently showing movies, upcoming releases, a ticket booking system, form validation, and an interactive quiz.
+Welcome to my first website build! This project is for a fictional cinema website that includes various features to enhance user experience, such as currently showing movies, upcoming releases, a ticket booking system, form validation, and an interactive quiz.
 
 ## Screenshots
 
